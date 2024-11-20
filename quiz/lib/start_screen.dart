@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz/quiz.dart';
 import 'package:quiz/questions_screen.dart';
 
@@ -22,11 +23,12 @@ class StartScreen extends StatelessWidget {
             ),
             Container(
               margin: const EdgeInsets.only(bottom: 50, top: 50),
-              child: const Text(
+              child: Text(
                 'Learn Flutter the fun way!',
-                style: TextStyle(
+                style: GoogleFonts.abel(
                   color: Colors.white,
                   fontSize: 24,
+                  fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -37,10 +39,12 @@ class StartScreen extends StatelessWidget {
                 backgroundColor: const Color.fromARGB(255, 50, 0, 90),
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
               ),
-              label: const Text('Start Quiz',
-              style: TextStyle(
+              label: Text(
+              'Start Quiz',
+              style: GoogleFonts.abel(
                 color: Colors.white,
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
               ),
               icon: const Icon(Icons.arrow_right_alt),
